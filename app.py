@@ -1,13 +1,8 @@
-import os
 from flask import Flask
-from flask_cors import CORS
 import pyqrcode
 import png
 
 app = Flask(__name__)
-
-cors = CORS(app,resource={r"/*":{"origens":"*"}})
-
 
 @app.route("/<id>",methods=['GET'])
 def index(id):
@@ -16,10 +11,8 @@ def index(id):
     html_img = '<img src="data:image/png;base64,{}">'.format(image_as_str)
     return html_img
 
-
 def main():
-    port = int(os.environ.get("PORT",5000))
-    app.run(host="0.0.0.0",port=port)
+    app.run(port=5000)
 
 if __name__ == "__main__":
     main()
