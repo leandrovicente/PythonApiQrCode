@@ -10,7 +10,7 @@ cors = CORS(app,resource={r"/*":{"origens":"*"}})
 
 @app.route("/",methods=['GET'])
 def index():
-    url = pyqrcode.create('leandro')
+    url = pyqrcode.create('leandro vicente')
     url.svg('qrCode.svg', scale = 8)
     arquivo = open('qrCode.svg')
     for a in arquivo:
