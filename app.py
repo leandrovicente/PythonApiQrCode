@@ -9,7 +9,7 @@ cors = CORS(app,resource={r"/*":{"origens":"*"}})
 
 @app.route("/",methods=['GET'])
 def index():
-    return "<h1> Hellow</h1>"
+    return "<h1>Hellow 2</h1>"
 
 def main():
     port = int(os.environ.get("PORT",5000))
