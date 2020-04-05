@@ -11,7 +11,7 @@ cors = CORS(app,resource={r"/*":{"origens":"*"}})
 def index(id):
     code = pyqrcode.create(id)
     image_as_str = code.png_as_base64_str(scale=5)
-    html_img = '<img src="data:image/png;base64,{}">'.format(image_as_str)
+    html_img = '<img style="width: 250px;" src="data:image/png;base64,{}">'.format(image_as_str)
     return html_img
 
 
