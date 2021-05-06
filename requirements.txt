@@ -21,7 +21,7 @@ fake-useragent==0.1.11
 filelock==3.0.12
 filetype==1.0.5
 Flask==1.1.1
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 Flask-Migrate==2.5.2
 Flask-MySQL==1.5.1
 Flask-RESTful==0.3.8
